@@ -10,8 +10,8 @@ const buildMarker = (type, coords) => {
   const markerDomEl = document.createElement("div");
   markerDomEl.style.width = "32px";
   markerDomEl.style.height = "39px";
-  markerDomEl.style.backgroundImage = iconURLs[type];
-  console.log(coords)
+  markerDomEl.style.backgroundImage = `url(${iconURLs[type]})`;
+  console.log(iconURLs.hotels)
    const newMarker = new mapboxgl.Marker(markerDomEl).setLngLat(coords);
    return newMarker;
 };

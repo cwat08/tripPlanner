@@ -6,7 +6,69 @@
     <link href='https://api.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.css' rel='stylesheet' />
     <script src="./bundle.js" defer></script>
   </head>
+  <nav>
+      <h1 id='navbar'>Trip Planner</h1>
+    </nav>
   <body>
+    <div id='wrapper'>
     <div id="map"></div>
+    <div class='sidebar'>
+      <div id='choices'>
+        <div id='hotels'>
+          <span class='choiceTitle'>Hotels</span>
+          <div class="dropdown">
+              <button class="dropbtn">Dropdown</button>
+              <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+            </div>
+          <button>X</button>
+        </div>
+        <div id='restaurants'>
+            <span class='choiceTitle'>Restaurants</span>
+            <div class="dropdown">
+                <button class="dropbtn">Dropdown</button>
+                <div class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </div>
+            <button>X</button>
+          </div>
+          <div id='activities'>
+              <span class='choiceTitle'>Activities</span>
+              <div class="dropdown">
+                  <button class="dropbtn">Dropdown</button>
+                  <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                  </div>
+                </div>
+              <button>X</button>
+            </div>
+      </div>
+      <div id='itinerary'>
+          <div id='hotels'>
+              <span class='choiceTitle'>Hotels</span>
+              <span class='dropdown'></span>
+              <button>X</button>
+            </div>
+            <div id='restaurants'>
+                <span class='choiceTitle'>Restaurants</span>
+                <span class='dropdown'></span>
+                <button>X</button>
+              </div>
+              <div id='activities'>
+                  <span class='choiceTitle'>Activities</span>
+                  <span class='dropdown'></span>
+                  <button>X</button>
+                </div>
+      </div>
+    </div>
+  </div>
   </body>
 </html>
